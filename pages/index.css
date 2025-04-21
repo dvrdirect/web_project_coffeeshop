@@ -173,7 +173,6 @@ body {
   border: none;
 }
 .video__caption {
-  text-justify: distribute-all-lines;
   font-family: "Inter", Arial, sans-serif;
 
   font-style: normal;
