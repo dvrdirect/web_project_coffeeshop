@@ -42,7 +42,7 @@ body {
 
   line-height: 20px;
 }
-.title {
+.header__title {
   display: block;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
@@ -68,7 +68,7 @@ body {
 
   color: #2f80ed;
 }
-.description {
+.header__description {
   font-family: "Noto Serif", "Times New Roman", serif;
 
   font-style: normal;
