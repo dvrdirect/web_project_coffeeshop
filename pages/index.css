@@ -56,7 +56,7 @@ body {
   top: 183px;
 }
 .span-accent {
-  font-family: Noto "Serif", "Times New Roman", serif;
+  font-family: "Noto Serif", "Times New Roman", serif;
 
   font-style: italic;
 
@@ -69,7 +69,7 @@ body {
   color: #2f80ed;
 }
 .description {
-  font-family: Noto "Serif", "Times New Roman", serif;
+  font-family: "Noto Serif", "Times New Roman", serif;
 
   font-style: normal;
 
