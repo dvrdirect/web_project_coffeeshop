@@ -212,7 +212,8 @@ body {
   font-size: 44px;
 
   line-height: 52px;
-  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -228,7 +229,7 @@ body {
   flex-direction: column;
   align-content: center;
   max-width: 385px;
-  margin: auto;
+  margin-bottom: 120px;
   gap: 32px;
 }
 .reservation__form-set_item {
