@@ -212,10 +212,11 @@ body {
   font-size: 44px;
 
   line-height: 52px;
-  position: relative;
-  top: 100px;
+  margin: auto;
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 100px;
 }
 .reservation__form {
   position: relative;
