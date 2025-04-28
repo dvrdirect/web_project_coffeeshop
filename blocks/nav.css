@@ -46,20 +46,3 @@
 .nav__list {
   list-style-type: none;
 }
-.enlace {
-  text-decoration: none;
-  color: #000000;
-}
-.span-accent {
-  font-family: "noto serif", "Times New Roman";
-
-  font-style: italic;
-
-  font-weight: normal;
-
-  font-size: 58px;
-
-  line-height: 72px;
-
-  color: #2f80ed;
-}
