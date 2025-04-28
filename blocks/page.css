@@ -10,16 +10,3 @@
 body {
   background-color: #ffffff;
 }
-.span-accent {
-  font-family: "noto serif", "Times New Roman";
-
-  font-style: italic;
-
-  font-weight: normal;
-
-  font-size: 58px;
-
-  line-height: 72px;
-
-  color: #2f80ed;
-}
