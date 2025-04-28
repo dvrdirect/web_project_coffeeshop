@@ -6,7 +6,7 @@
     <meta name="description" content="Página de la Cafetería" />
     <meta name="author" content="Daniel Villagómez" />
     <meta name="keywords" content="pagina, cafeteria" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
+
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,26 +26,32 @@
   <body>
     <div class="page">
       <header class="header">
-        <nav class="nav">
-          <nav class="nav nav__logo">
-            <img src="./images/logo_coffeeshop_dark.svg" alt="logo-dark" />
-          </nav>
-          <nav class="nav nav__links">
-            <ul class="nav nav__link">
-              <li><a class="enlace" href="#recipes">Recetas</a></li>
-              <li>
-                <a class="enlace" href="#reservation"></a>Reservar una mesa
-              </li>
-              <li>Contactos</li>
-            </ul>
-          </nav>
+        <nav class="nav"></nav>
+        <nav class="nav nav__logo">
+          <img
+            src="/images/logo_coffeeshop_dark.svg"
+            alt="logo_coffeeshop_dark"
+          />
         </nav>
-        <h1 class="header header__title">
+        <nav class="nav nav__links">
+          <ul class="nav nav__link">
+            <li class="nav__list">
+              <a class="enlace" href="#recipes">Recetas</a>
+            </li>
+            <li class="nav__list">
+              <a class="enlace" href="#reservation">Reservar una mesa</a>
+            </li>
+            <li class="nav__list">
+              <a class="enlace" href="#contact">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
           <span class="span-accent">Café de especialidad</span>
           <br />
           en Triple Peaks
         </h1>
-        <p class="header header__description">
+        <p class="header__description">
           ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
           para darte energía y motivar tu creatividad.
         </p>
@@ -76,7 +82,7 @@
             elabores tus propios snacks
           </h3>
           <div class="recipes__videos" id="recipes-videos">
-            <ul>
+            <ul class="recipes__videos-flex">
               <li class="recipes__video-item">
                 <iframe
                   class="recipes__iframe"
@@ -87,7 +93,7 @@
                   allowfullscreen
                 ></iframe>
                 <p class="recipes__video-caption">
-                  <span>Receta en Aeropress </span>~5 min
+                  Receta en Aeropress <span>~5 min</span>
                 </p>
               </li>
               <li class="recipes__video-item">
@@ -111,7 +117,7 @@
           <form class="form reservation__form">
             <fieldset class="reservation__form">
               <label class="reservation__label" for="nombre"
-                >Nombre*
+                ><p class="reservation__label-text">Nombre*</p>
                 <input
                   class="reservation__form reservation__form_item"
                   type="text"
@@ -121,19 +127,18 @@
               </label>
               <br />
               <label class="reservation__label" for="numero-de-comensales"
-                >Número de comensales*
+                ><p class="reservation__label-text">Número de comensales*</p>
                 <input
+                  class="reservation__form reservation__form_item"
                   type="number"
                   min="1"
                   max="8"
                   id="numero-de-comensales"
-                  class="reservation__form reservation__form_item"
                   placeholder="1-8"
-                />
-              </label>
+              /></label>
               <br />
               <label class="reservation__label" for="fecha-y-hora"
-                >Fecha y hora*
+                ><p class="reservation__label-text">Fecha y hora*</p>
                 <input
                   type="date"
                   class="reservation__form reservation__form_item"
@@ -142,7 +147,8 @@
               </label>
               <br />
               <label class="reservation__label" for="email"
-                >Tu correo electrónico*
+                ><p class="reservation__label-text">Tu correo electrónico*</p>
+
                 <input
                   class="reservation__form reservation__form_item"
                   type="email"
@@ -151,7 +157,6 @@
                 />
               </label>
               <br />
-
               <button
                 type="submit"
                 class="reservation__form reservation__form_button"
@@ -159,9 +164,8 @@
               >
                 Reservar una mesa
               </button>
-
               <br />
-              <label class="reservation__label" for="checkbox"
+              <label class="reservation__label-checkbox" for="checkbox"
                 >Acepto los términos de uso
                 <input
                   class="reservation__form reservation__form_checkbox"
@@ -173,7 +177,38 @@
           </form>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <section class="footer__content" id="contact">
+          <img
+            class="footer__logo"
+            src="/images/logo_coffeeshop_light.svg"
+            alt="logo_coffeeshop_light"
+          />
+          <div class="footer__social">
+            <p class="footer__social-heading">Redes Sociales</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  class="footer__social-icon"
+                  src="/images/facebook_white.svg"
+                  alt="facebook_white"
+                />
+                <a class="footer__social-link" href="#">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  class="footer__social-icon"
+                  src="/images/instagram_white.svg"
+                  alt="instagram_white"
+                />
+                <a class="footer__social-link" href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__circle"></div>
+        <p class="footer__copyright">© 2025 Daniel Villagómez</p>
+      </footer>
     </div>
   </body>
 </html>
