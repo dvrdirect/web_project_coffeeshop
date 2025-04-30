@@ -46,3 +46,7 @@
 .nav__list {
   list-style-type: none;
 }
+.enlace{
+	text-decoration:none;
+	color:#000000;
+}
