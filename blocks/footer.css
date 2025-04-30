@@ -3,6 +3,7 @@
   min-height: 35vh;
   position: relative;
   z-index: 1;
+  overflow: hidden;
   /*height: 1000px;
   width: 1000px;*/
 }
