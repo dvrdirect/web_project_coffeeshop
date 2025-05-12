@@ -40,17 +40,18 @@
 
   line-height: 20px;
 }
-.nav__link:hover {
+/*.nav__link:hover {
   color: #2f80ed;
-}
+}*/
 .nav__list {
   list-style-type: none;
 }
-/*
-Las pruebas automatizadas me rechazan cuando intento poner esta regla. Es uno de los
-errores que me habias señalado. Espero que puedan pasar comentadas
-.enlace{
-	text-decoration:none;
-	color:#000000;
+
+.enlace {
+  text-decoration: none;
+  color: #000000;
 }
-*/
+
+.enlace:hover {
+  color: #2f80ed;
+}
